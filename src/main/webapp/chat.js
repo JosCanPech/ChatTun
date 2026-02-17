@@ -1,5 +1,5 @@
 // abre un canal de comunicación en tiempo real entre el navegador y el servidor GlassFish.
-let conexion = new WebSocket("ws://192.168.0.10:8095/ChatTun/chat"); 
+const conexion = new WebSocket('wss://192.168.0.10:8095/ChatTun/chat'); 
 
 //hace que los mensajes entrantes aparescan en el html
 conexion.onmessage = function(evento) {
